@@ -223,3 +223,16 @@ margin-right: 10px;
   border-color: #000;
 }
 
+@media (max-width: 768px) {
+     .sec6-header{
+      font-size: 40px;
+     }
+ 
+  }
+
+  @media (max-width: 480px) {
+    .sec6-header{
+      font-size: 20px;
+     }
+   
+  }

@@ -109,8 +109,10 @@ color: #0A0A09;
     border-color: #000;
   }
 
-  /* Responsive */
   @media (max-width: 768px) {
+     .collections-header h2{
+      font-size: 45px;
+     }
     .slide {
       flex: 0 0 50%;
       /* 2 slides on smaller */
@@ -118,6 +120,9 @@ color: #0A0A09;
   }
 
   @media (max-width: 480px) {
+    .collections-header h2{
+      font-size: 20px;
+     }
     .slide {
       flex: 0 0 100%;
       /* 1 slide on very small */
