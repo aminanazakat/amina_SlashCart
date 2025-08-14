@@ -1,0 +1,225 @@
+/* Section 6 - Our Favorites */
+.sec6-favorites {
+    padding: 40px 5%;
+    background: #F6F8F2;
+
+}
+
+.sec6-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sec6-header h2 {
+    font-family: Barlow;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 70px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: #0A0A09;
+}
+
+/* Slider Container */
+.sec6-slider-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.sec6-slider-track-wrapper {
+    overflow: hidden;
+    flex: 1;
+}
+
+.sec6-slider-track {
+    display: flex;
+    transition: transform 0.3s ease-in;
+    gap: 10px;
+}
+
+.sec6-product-card {
+    position: relative;
+    width: 322px;
+    height: 440px;
+    opacity: 1;
+   background-color: #f3f9e6;
+}
+
+.sec6-product-card img {
+    margin: 7px;
+    width: 260px;
+    height: 276px;
+    opacity: 1;
+    border-radius: 10px;
+}
+
+.sec6-country {
+    font-family: Barlow;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 25px;
+    line-height: 18px;
+    letter-spacing: -4%;
+    text-align: center;
+    color: #0A0A09;
+}
+
+.sec6-price {
+   font-family: Barlow;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: center;
+    color: #0A0A09;
+}
+
+.sec6-rating {
+   font-family: Barlow;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: center;
+
+    color: #0A0A09;
+}
+
+/* Slider Buttons */
+.sec6-slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #0A0A09;
+    color: #F6F8F2;
+    border: none;
+    font-size: 25px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+
+.sec6-slider-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.sec6-left-btn {
+    left: -20px;
+    /* adjust as needed */
+}
+
+.sec6-right-btn {
+    right: -20px;
+   
+}
+
+.sec6-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 0px); 
+  height: calc(100% - 70px); /* top & bottom gap */
+  background: rgba(117, 117, 117, 0.6);
+  color: #F6F8F2;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* start from top */
+  align-items: center;
+  padding: 70px 30px;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(10px);
+  z-index: 2;
+}
+
+.sec6-product-card:hover .sec6-overlay {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.sec6-info-line {
+    margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+width: 265px;
+height: 30px;
+  gap: 10px;
+}
+
+.sec6-info-line span:first-child {
+ font-family: Inter;
+font-weight: 600;
+font-style: Semi Bold;
+font-size: 11px;
+line-height: 18px;
+letter-spacing: 0%;
+margin-left: 10px;
+
+}
+
+.sec6-info-line span:last-child {
+  font-family: Inter;
+font-weight: 600;
+font-style: Semi Bold;
+font-size: 11px;
+line-height: 18px;
+letter-spacing: 0%;
+margin-right: 10px;
+}
+
+.sec6-info-line hr {
+  flex: 1 1 50px; 
+  border: none;
+  border-top: 1px solid #F6F8F2;
+  margin: 0;
+}
+
+.sec6-buy-now {
+    width: 190px;
+  margin-top: 140px; 
+  background: #F6F8F2;
+  color: #0A0A09;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 100px;
+  transition: background 0.3s;
+}
+
+.sec6-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 12px;
+}
+
+.sec6-pagination .dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.sec6-pagination .dot.active {
+  background-color: #000;
+  border-color: #000;
+}
+

@@ -1,0 +1,150 @@
+/* Instagram Section */
+.instagram-section {
+  text-align: center;
+  padding: 50px 40px;
+  background-color: #fff;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Header */
+.instagram-header {
+  font-family: Barlow;
+  font-weight: 500;
+  font-size: 29px;
+  line-height: 18px;
+  text-decoration: underline;
+  padding-bottom: 2rem;
+}
+
+/* Description */
+.instagram-description {
+  margin-top: 1rem;
+  font-family: Barlow;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #0A0A09;
+}
+
+/* Slider Container */
+.instagram-slider-container {
+  padding: 2.5rem 0;
+  overflow: hidden;       /* hide extra cards */
+  max-width: 100%;
+  position: relative;
+}
+
+/* Slider Track */
+.instagram-slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 10px;
+}
+
+/* Image Card */
+.instagram-image-card {
+  flex: 0 0 auto;         /* width controlled via JS */
+  max-width: 253px;
+  height: 244px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Card Image */
+.instagram-image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Hover Overlay */
+.instagram-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+/* Hover dark overlay on image */
+.instagram-image-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(62, 60, 60, 0.783); /* semi-transparent black */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 15px; /* match image border radius */
+}
+
+.instagram-image-card:hover::before {
+  opacity: 1;
+}
+
+/* Keep overlay icon visible on top */
+.instagram-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.instagram-image-card:hover .instagram-overlay {
+  opacity: 1;
+}
+
+.instagram-image-card:hover .instagram-overlay {
+  opacity: 1;
+}
+
+.instagram-overlay img {
+  width: 38px;
+  height: 38px;
+}
+
+/* Pagination */
+.instagram-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 20px;
+}
+
+.instagram-pagination .dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1.5px solid #000;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.instagram-pagination .dot.active {
+  background: #000;
+  border-color: #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .instagram-image-card {
+    max-width: none; /* allow JS to control width */
+  }
+}
+
+@media (max-width: 480px) {
+  .instagram-image-card {
+    max-width: none;
+  }
+}

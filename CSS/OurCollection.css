@@ -1,0 +1,129 @@
+  
+  /* Collections Section */
+  .collections-section {
+    position: relative;
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+    overflow: visible;
+  }
+
+  .collections-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   margin: 5.5rem;
+  }
+
+  .collections-header h2 {
+    font-family: Barlow;
+font-weight: 400;
+font-style: Regular;
+font-size: 70px;
+line-height: 18px;
+letter-spacing: -4%;
+color: #0A0A09;
+
+  }
+
+  .collections-slider {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slider-track {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .slide {
+    flex: 0 0 33.3333%;
+    /* 3 slides visible */
+    padding: 10px;
+  }
+
+  .slide img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+    user-select: none;
+  }
+
+  /* Buttons */
+  .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    padding: 8px 14px;
+    cursor: pointer;
+    border-radius: 50%;
+    user-select: none;
+    z-index: 1000;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slider-btn.left {
+    left: 12px;
+  }
+
+  .slider-btn.right {
+    right: 12px;
+  }
+
+  /* Pagination */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 12px;
+  }
+
+  .pagination-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: transparent;
+    /* no fill */
+    border: 2px solid #000;
+    /* black hollow circle */
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    border: 1px solid #000;
+    background-clip: padding-box;
+  }
+
+  .pagination-dot.active {
+    background-color: #000;
+    /* fully black filled */
+    border-color: #000;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .slide {
+      flex: 0 0 50%;
+      /* 2 slides on smaller */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .slide {
+      flex: 0 0 100%;
+      /* 1 slide on very small */
+    }
+  }
+
+
+
+ 

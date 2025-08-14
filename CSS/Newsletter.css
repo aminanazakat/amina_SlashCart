@@ -1,0 +1,81 @@
+/* Newsletter Section */
+  .newsletter-section {
+    height: 50vh;
+    background: #E0E1DA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    text-align: center;
+
+  }
+
+  .newsletter-content h2 {
+    font-family: Barlow;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 70px;
+    line-height: 18px;
+    letter-spacing: -4%;
+    text-align: center;
+
+  }
+
+  .newsletter-content p {
+    margin-top: 3rem;
+    font-family: Barlow;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    margin-bottom: 2rem;
+    color: #0A0A09;
+  }
+
+  .newsletter-btn {
+    width: 523.2080688476562px;
+    height: 60px;
+    border-radius: 125px;
+    border: 1px solid #0A0A09;
+    background: #E0E1DA;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* text stays left */
+    padding-left: 20px;
+    /* only left padding */
+    cursor: pointer;
+    position: relative;
+    /* for absolute arrow */
+    overflow: hidden;
+    font-family: Barlow;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    box-sizing: border-box;
+  }
+
+  /* Arrow black corner */
+  .newsletter-btn .arrow {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 78px;
+    height: 100%;
+    border-left: 1px solid #0A0A09;
+    background: #0A0A09;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Arrow image */
+  .newsletter-btn .arrow img {
+    width: 31.069364547729492px;
+    height: auto;
+    opacity: 1;
+  }

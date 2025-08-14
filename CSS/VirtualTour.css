@@ -1,0 +1,77 @@
+.virtual-tours-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: #F6F8F2;
+  }
+
+  .vt-left {
+    flex: 1 1 50%;
+    text-align: center;
+  }
+
+  .vt-title {
+    font-family: Barlow;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 70px;
+    line-height: 100%;
+    letter-spacing: -4%;
+    text-align: center;
+  }
+
+  .vt-description {
+    margin-top: 1rem;
+    font-family: Barlow;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .vt-read-more {
+    margin-top: 2rem;
+    padding: 8px 20px;
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+  }
+
+  .vt-read-more:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .vt-right {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .vt-right img {
+    width: 100%;
+    height: 480px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* Responsive only on small screens */
+  @media (max-width: 768px) {
+    .virtual-tours-section {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .vt-right {
+      justify-content: center;
+    }
+  }

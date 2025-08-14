@@ -1,0 +1,118 @@
+/* Footer Base */
+.site-footer {
+  background-color: #000;
+  padding: 3rem 1.5rem 1.5rem;
+  color: #fff;
+  font-family: Barlow, sans-serif;
+}
+
+/* Footer Layout */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+/* Footer Column */
+.footer-column {
+  flex: 1 1 150px;
+  min-width: 150px;
+}
+
+.footer-column h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff; /* white heading */
+  margin-bottom: 1rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.7rem;
+}
+
+.footer-column ul li a {
+  color: #ccc; /* gray list items */
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #fff;
+}
+
+/* Logo & Social Icons */
+.logo-img {
+  max-width: 140px;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons img {
+ width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+/* Contact Section */
+.footer-contact ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-contact li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 1.4; /* prevents icons from increasing spacing */
+}
+
+.contact-icon {
+  width: 22px;  
+  height: 22px;
+  object-fit: contain;
+  flex-shrink: 0; /* stops icon from squishing */
+}
+
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #F5F5F5;
+
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
